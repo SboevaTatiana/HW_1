@@ -1,0 +1,15 @@
+C:\repo\ConsoleApp\HW1\Ex06\obj\Debug\net6.0\Ex06.csproj.AssemblyReference.cache
+C:\repo\ConsoleApp\HW1\Ex06\obj\Debug\net6.0\Ex06.GeneratedMSBuildEditorConfig.editorconfig
+C:\repo\ConsoleApp\HW1\Ex06\obj\Debug\net6.0\Ex06.AssemblyInfoInputs.cache
+C:\repo\ConsoleApp\HW1\Ex06\obj\Debug\net6.0\Ex06.AssemblyInfo.cs
+C:\repo\ConsoleApp\HW1\Ex06\obj\Debug\net6.0\Ex06.csproj.CoreCompileInputs.cache
+C:\repo\ConsoleApp\HW1\Ex06\bin\Debug\net6.0\Ex06.exe
+C:\repo\ConsoleApp\HW1\Ex06\bin\Debug\net6.0\Ex06.deps.json
+C:\repo\ConsoleApp\HW1\Ex06\bin\Debug\net6.0\Ex06.runtimeconfig.json
+C:\repo\ConsoleApp\HW1\Ex06\bin\Debug\net6.0\Ex06.dll
+C:\repo\ConsoleApp\HW1\Ex06\bin\Debug\net6.0\Ex06.pdb
+C:\repo\ConsoleApp\HW1\Ex06\obj\Debug\net6.0\Ex06.dll
+C:\repo\ConsoleApp\HW1\Ex06\obj\Debug\net6.0\refint\Ex06.dll
+C:\repo\ConsoleApp\HW1\Ex06\obj\Debug\net6.0\Ex06.pdb
+C:\repo\ConsoleApp\HW1\Ex06\obj\Debug\net6.0\Ex06.genruntimeconfig.cache
+C:\repo\ConsoleApp\HW1\Ex06\obj\Debug\net6.0\ref\Ex06.dll
