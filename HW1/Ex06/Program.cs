@@ -2,13 +2,13 @@
 // является ли число чётным (делится ли оно на два без остатка).
 
 Console.WriteLine("Введите число:");
-int num = Convert.ToInt32(Console.ReadLine());
+int a = Convert.ToInt32(Console.ReadLine());
 
-if (num % 2 == 1)
+if (a % 2 == 1)
 {
-  Console.WriteLine("Число " + num + " является: нечетным");
+  Console.WriteLine("Число " + a + " является: нечетным");
 }
 else
 {
-  Console.WriteLine("Число " + num + "является: четным");
+  Console.WriteLine("Число " + a + "является: четным");
 }
