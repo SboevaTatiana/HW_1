@@ -1,33 +1,15 @@
 ﻿// Задача 10:  Напишите программу, которая принимает на вход трёхзначное число 
 // и на выходе показывает вторую цифру этого числа.
 
-int number = ReadInt("Введите трехзначное число: ");
-int amount = number.ToString().Length;
+Console.Write("Введите трехзначное число: ");
+int number = Convert.ToInt32(Console.ReadLine());
 
-if (amount < 3 || amount > 3)
+if ((number > 99) && (number < 1000))
 {
-    Console.WriteLine("Вы ввели не трехзначное число");
+    number = number % 100 / 10;
+    Console.WriteLine("Вторая цифра этого числа: " + number);
 }
 else
 {
-    Console.WriteLine(InCenter(number));
-}
-
-
-
-// ФУНКЦИИ------------------------------------------------------------------------------------------------------
-
-// Функция принимает сообщение для отображения в консоли, и выводит результат введенных данных пользователем. 
-int ReadInt(string message)
-{
-    Console.Write(message);
-    return Convert.ToInt32(Console.ReadLine());
-}
-
-// Функция вывода цифры стоящей в середине трехзначногно числа.
-int InCenter(int a)
-{
-    
-    int result = ((a / 10) % 10);
-    return result;
+    Console.WriteLine("Введено не трехзначное число");
 }
