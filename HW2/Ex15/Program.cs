@@ -7,11 +7,11 @@ if ((number > 5) && (number < 8))
 {
   Console.WriteLine("Выходной");
 }
- else if ((number > 0) && (number < 6))
-      {
-        Console.WriteLine("Будни");
-      }
-       else
-      {
-        Console.WriteLine("Введено некорректное значение");
-      }
+else if ((number > 0) && (number < 6))
+{
+  Console.WriteLine("Будни");
+}
+else
+{
+  Console.WriteLine("Введено некорректное значение");
+}
