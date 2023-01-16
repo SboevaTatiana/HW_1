@@ -86,3 +86,35 @@ int[] arry = new int[cube+1];
 Cube(arry);
 PrintArry(arry);
 */
+
+
+// Задача 27. Написать программу, которая принимает на вход число и выдает сумму цифр в числе.
+System.Console.WriteLine("Задача 27. Написать программу, которая принимает на вход число и выдает сумму цифр в числе");
+System.Console.Write("Введите число: ");
+int F = int.Parse(Console.ReadLine()!);
+System.Console.WriteLine($"Сумма цифр в числе {F} равна {GetNumberSum(F)}");
+
+// ---------------Методы-----------------
+int GetNumberSum (int nmb)
+{
+    int sum = 0;
+    for (int n = nmb; n > 0; n = n / 10)
+    {
+        sum = sum + n % 10;
+    }
+    return sum;
+}
+
+
+
+// Напишите программу, которая выводит массив из 8 элементов, заполненный нулями и единицами в случайном порядке.
+// [1,0,1,1,0,1,0,0]
+
+/*
+int[] arr = new int[8];
+for (int i = 0; i < arr.Length; i++)
+{
+  arr[i] = new Random().Next(0, 2);
+  Console.Write(arr[i] + " ");
+}
+*/
