@@ -1,60 +1,33 @@
 public static class Library
 {
-  // 1. Ввод N
+    // Заполнение массива 
 
-  public static int Input()
+  public static void FillArrayRandomNumbers(int[,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
   {
-    Console.Write("Сколько чисел хотите ввести? ");
-    return Convert.ToInt32(Console.ReadLine());
-  }
-
-  // 2. Создание массива
-
-  public static int[] CreateArray(int number)
-  {
-    int[] array = new int[number];
-    return array;
-  }
-
-  // 3. Заполнение массива 
-
-  public static void FillArray(int[] number)
-  {
-    Console.WriteLine("Вводите ");
-    int count = number.Length;
-    for (int i = 0; i < count; i++)
+    for (int j = 0; j < array.GetLength(1); j++)
     {
-      number[i] = Convert.ToInt32(Console.ReadLine());
+      array[i, j] = new Random().Next(0, 10);
     }
   }
+}
 
-  // 4. Печать массива
+  // Печать массива
 
-  public static void PrintArray(int[] numbers)
+  public static void PrintArray(int[,] array)
+{
+  for (int i = 0; i < array.GetLength(0); i++)
   {
-    for (int i = 0; i < numbers.Length; i++)
+    Console.Write("[ ");
+    for (int j = 0; j < array.GetLength(1); j++)
     {
-      Console.Write(numbers[i] + " ");
+      Console.Write(array[i, j] + " ");
     }
+    Console.Write("]");
+    Console.WriteLine("");
   }
-
-  // 5. Произведение пар чисел
-
-  public static int howManyNumbers(int[] array)
-  {
-    int result = 0;
-    Console.WriteLine("Количество чисел больше нуля: ");
-    for (int i = 0; i < array.Length; i++)
-    {
-      if (array[i] > 0)
-      {
-        result++;
-      }
-
-    }
-    return result;
-  }
-
+}
 
 }
 
