@@ -1,34 +1,21 @@
 public static class Library
 {
 
-  // Заполнение массива 
+  // Ввод числа
 
-  public static void FillArrayRandomNumbers(int[,] array)
+  public static int InputNumbers(string input)
   {
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-      for (int j = 0; j < array.GetLength(1); j++)
-      {
-        array[i, j] = new Random().Next(0, 10);
-      }
-    }
+    Console.Write(input);
+    return Convert.ToInt32(Console.ReadLine());
   }
 
-  // Печать массива
+  // Подсчет функции Аккермана
 
-  public static void PrintArray(int[,] array)
+  public static int Ack(int m, int n)
   {
-
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-      Console.Write("[ ");
-      for (int j = 0; j < array.GetLength(1); j++)
-      {
-        Console.Write(array[i, j] + " ");
-      }
-      Console.Write("]");
-      Console.WriteLine("");
-    }
+    if (m == 0) return n + 1;
+    else if (n == 0) return Ack(m - 1, 1);
+    else return Ack(m - 1, Ack(m, n - 1));
   }
 
 

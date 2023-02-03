@@ -1,35 +1,26 @@
 public static class Library
 {
 
-  // Заполнение массива 
+  // Ввод числа
 
-  public static void FillArrayRandomNumbers(int[,] array)
+  public static int InputNumbers(string input)
   {
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-      for (int j = 0; j < array.GetLength(1); j++)
-      {
-        array[i, j] = new Random().Next(0, 10);
-      }
-    }
+    Console.Write(input);
+    return Convert.ToInt32(Console.ReadLine());
   }
 
-  // Печать массива
+  // Подсчет суммы натуральных чисел от M до N
 
-  public static void PrintArray(int[,] array)
+  public static void PrintSumm(int numberM, int numberN, int summ)
+{
+  summ += numberN;
+  if (numberN <= numberM)
   {
-
-    for (int i = 0; i < array.GetLength(0); i++)
-    {
-      Console.Write("[ ");
-      for (int j = 0; j < array.GetLength(1); j++)
-      {
-        Console.Write(array[i, j] + " ");
-      }
-      Console.Write("]");
-      Console.WriteLine("");
-    }
+    Console.Write($"Сумма натуральных элементов в промежутке от M до N = {summ} ");
+    return;
   }
+  PrintSumm(numberM, numberN - 1, summ);
+}
 
 
 }
